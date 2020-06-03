@@ -1,8 +1,10 @@
 {% extends "base.html"%}
-
 {% load static %}
 
+
+{% block head %}
 <link rel="stylesheet" href="{% static 'musics/css/styles.css' %}">
+{% endblock %}
 
 {% block page_content %}
 
@@ -15,7 +17,6 @@
         <div class="sidebar-header">
           <a href="#" class="sidebar-brand">Music<span>Mood</span></a>
         </div>
-    
     
         <ul class="list-unstyled components">
           <li class="nav-item nav-category">
