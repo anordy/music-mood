@@ -1,0 +1,218 @@
+{% extends "base.html"%}
+
+{% block page_content %}
+
+<div class="wrapper">
+    <!-- Sidebar -->
+    {% block sidebar %}
+    <nav id="sidebar">
+        <div class="sidebar-header">
+          <a href="#" class="sidebar-brand">Music<span>Mood</span></a>
+        </div>
+    
+    
+        <ul class="list-unstyled components">
+          <li class="nav-item nav-category">
+            Main
+          </li>
+          <li class="nav-item active">
+            <a href="/dashboard" class="nav-link">
+              <i class="fas fa fa-cube"></i>
+              <span class="link-title">Dashboard</span></a
+            >
+          </li>
+          <li class="nav-item nav-category">MUSIC MOOD</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fas fa fa-globe"></i
+              ><span class="link-title">Browse</span></a
+            >
+          </li>
+          <li class="nav-item">
+              <a href="#" class="nav-link"
+              ><i class="fas fa fa-wifi"></i
+              ><span class="link-title">Radio</span></a
+            >
+          </li>
+    
+          <li class="nav-item nav-category">LIBRALY</li>
+    
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fas fa fa-clock"></i
+              ><span class="link-title">Recently Added</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fas fa fa-user"></i
+              ><span class="link-title">Artists</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fas fa fa-music"></i
+              ><span class="link-title"></span>Album</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fas fa fa-music"></i
+              ><span class="link-title"></span>Songs</a
+            >
+          </li>
+    
+          <li class="nav-item nav-category">STORE</li>
+    
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fas fa fa-upload"></i
+              ><span class="link-title">Upload</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fas fa fa-download"></i
+              ><span class="link-title">Download</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fas fa fa-credit-card"></i
+              ><span class="link-title">Claim payment</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fas fa fa-bell"></i
+              ><span class="link-title">Notify</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fas fa fa-check"></i
+              ><span class="link-title">Verify</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    {% endblock %}
+    <!-- Page Content -->
+    <div id="content">
+
+    {% block  navbar_header %}
+      <!-- We'll fill this with dummy content -->
+      <nav class="navbar-content">
+        <form action="" class="search-form">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <i class="fas fa fa-search"></i>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search here..."
+              />
+            </div>
+          </div>
+        </form>
+         <ul class="navbar-nav">
+             <li class="nav-item dropdown nav-notifications"></li>
+             <li class="nav-item nav-profile">
+                 <a href="" class="nav-link dropdown-toggle" id="ProfileDropdown" role="button" aria-expanded="true"
+                 aria-haspopup="true" data-toggle="dropdown">
+              <img src="" alt=""></a>
+              <div class="dropdown-menu " aria-labelledby="profileDropdown">
+                  <img class="text-center" src="" alt="image">
+                  <h5 class="display-6 text-center">Chris Binagi</h5>
+                  <p class="text-muted text-center">chris@gmail.com</p>
+                  <hr class="bg-primary m-4">
+                  <ul class="list-unstyled componets">
+                      <li class="nav-item">
+                          <a href="#" class="nav-link"
+                            ><i class="fas fa fa-user"></i
+                            ><span class="link-title">Profile</span></a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link"
+                            ><i class="fas fa fa-edit"></i
+                            ><span class="link-title">Edit Profile</span></a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link"
+                            ><i class="fas fa fa-download"></i
+                            ><span class="link-title">Switch User</span></a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link"
+                            ><i class="fas fa fa-sign"></i
+                            ><span class="link-title">Logout</span></a
+                          >
+                        </li>
+                  </ul>
+              </div>
+             </li>
+         </ul>
+      </nav>
+
+    {% endblock %}
+
+    {% block content %}
+    <div id="cont">
+        <h1> hello world 
+        </h1>
+    </div>
+
+   
+    {% endblock %}
+      <!-- <p class="lead">
+          <h1>Songs table</h1>
+          <div class="table-responsive mt-5">
+              {% if all_song %}
+              <table class="table table-hover mb-0">
+  
+                <thead>
+                  <tr>
+                    <th class="pt-0">#</th>
+                    <th class="pt-0">Name</th>
+                    <th class="pt-0">Time</th>
+                    <th class="pt-0">Genre</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for song in all_song %}
+                  <tr>
+                  <td>{{ song.id }}</td>
+                  <td>{{ song.name }}</td>
+                  <td>{{ song.time }}</td>
+                  <td>{{ song.genre }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+              {% else %}
+                <p>Songs not found</p>
+                {% endif %}
+              </div>
+        </p>
+        {% for album in albums %}
+        <div class="col-md-4">
+            <div class="card mb-2">
+                <p>{{ album.cover }}</p>
+                <div class="card-body">
+                    <h5 class="card-title">{{ album.name }}</h5>
+                    <p class="card-text">{{ album.genre }}</p>
+                       class="btn btn-primary">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %} -->
+    </div>
+  </div>
+{% endblock %}
