@@ -2,7 +2,39 @@
 
 
 {% block main_content %}
+
 <div class="main-content">
-    <h1 >index page</h1>
+    {% comment %} row show metrics for system {% endcomment %}
+    <div class="row">
+    <div class="col-12 col-xl-12 stretch-card">
+    <div class="row flex-grow">
+    {% comment %} 1st card {% endcomment %}
+     <div class="col-md-4 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h6 class="card-title mb-0">New Songs</h6>
+              </div>
+              <div class="row">
+                <div class="col-6 col-md-12 col-xl-5">
+                  <h3 class="mb-2">3,897</h3>
+                  <div class="d-flex align-items-baseline">
+                    <p class="text-success">
+                      <span>+3.3%</span>
+                      <i data-feather="arrow-up" class="icon-sm mb-1"></i>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-12 col-xl-7">
+                  <div id="apexChart1" class="mt-md-3 mt-xl-0"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    {% comment %} 1st card end {% endcomment %}
+    </div>
+    </div>
+    </div>
    </div>
 {% endblock %}
