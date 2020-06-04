@@ -195,7 +195,18 @@ font-size: .875rem;
 width: 230px;
 background-color: #0f1531;
 }
+
+/* main content */
 .main-content {
 margin-left: 50px;
 margin-top: 70px;
+height: 100vh;
+position: fixed;
+width: 1300px;
+}
+.profile-image {
+    border-radius: 200px;
+}
+.card {
+    background-color: #0f1531;
 }

@@ -23,7 +23,7 @@
             Main
           </li>
           <li class="nav-item active">
-            <a href="/dashboard" class="nav-link">
+            <a href="dashboards/" class="nav-link">
               <i class="fas fa fa-cube"></i>
               <span class="link-title">Dashboard</span></a
             >
@@ -51,19 +51,19 @@
             >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link"
+            <a href="artists/" class="nav-link"
               ><i class="fas fa fa-user"></i
               ><span class="link-title">Artists</span></a
             >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link"
+            <a href="albums" class="nav-link"
               ><i class="fas fa fa-music"></i
               ><span class="link-title"></span>Album</a
             >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link"
+            <a href="songs/" class="nav-link"
               ><i class="fas fa fa-music"></i
               ><span class="link-title"></span>Songs</a
             >
@@ -127,11 +127,14 @@
          <ul class="navbar-nav">
              <li class="nav-item dropdown nav-notifications"></li>
              <li class="nav-item nav-profile">
+               
                  <a href="" class="nav-link dropdown-toggle" id="ProfileDropdown" role="button" aria-expanded="true"
                  aria-haspopup="true" data-toggle="dropdown">
               <img src="" alt=""></a>
               <div class="dropdown-menu " aria-labelledby="profileDropdown">
-                  <img class="text-center" src="" alt="image">
+                <div class="profile-image ">
+                  <img class="text-center  img-fluid" src="{% static 'musics/images/profile2.webp' %}" alt="profile">
+                </div>
                   <h5 class="display-6 text-center">Chris Binagi</h5>
                   <p class="text-muted text-center">chris@gmail.com</p>
                   <hr class="bg-primary m-4">
@@ -167,52 +170,12 @@
       </nav>
 
     {% endblock %}
+    
+        
+    {% block main_content %}
 
-    {% block main_content %}{% endblock %}
-      <!-- <p class="lead">
-          <h1>Songs table</h1>
-          <div class="table-responsive mt-5">
-              {% if all_song %}
-              <table class="table table-hover mb-0">
-  
-                <thead>
-                  <tr>
-                    <th class="pt-0">#</th>
-                    <th class="pt-0">Name</th>
-                    <th class="pt-0">Time</th>
-                    <th class="pt-0">Genre</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {% for song in all_song %}
-                  <tr>
-                  <td>{{ song.id }}</td>
-                  <td>{{ song.name }}</td>
-                  <td>{{ song.time }}</td>
-                  <td>{{ song.genre }}</td>
-                  </tr>
-                  {% endfor %}
-                </tbody>
-              </table>
-              {% else %}
-                <p>Songs not found</p>
-                {% endif %}
-              </div>
-        </p>
-        {% for album in albums %}
-        <div class="col-md-4">
-            <div class="card mb-2">
-                <p>{{ album.cover }}</p>
-                <div class="card-body">
-                    <h5 class="card-title">{{ album.name }}</h5>
-                    <p class="card-text">{{ album.genre }}</p>
-                       class="btn btn-primary">
-                        Read More
-                    </a>
-                </div>
-            </div>
-        </div>
-        {% endfor %} -->
-    </div>
-  </div>
+    {% endblock %}
+    
+        
+       
 {% endblock %}
