@@ -12,9 +12,20 @@ def musics(request):
 
 
 def dashboards(request):
-    albums = Album.objects.all()
-    context = {'albums': albums}
-    return render(request, 'musics/dashboard.html', context)
+    return render(request, 'musics/dashboards.html', {})
+
+
+def albums(request):
+        return render(request, 'musics/albums.html', {})
+
+
+def songs(request):
+    return render(request, 'musics/songs.html', {})
+
+
+def artists(request):
+    return render(request, 'musics/artists.html', {})
+
 
 # def songs(request):
 #     song = serializers.serialize('json', Song.objects.all())
