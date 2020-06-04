@@ -1,3 +1,5 @@
 [flake8] 
-exclude =
-views.py
+exclude = 
+   _pycache_,
+   manage.py,
+   settings.py

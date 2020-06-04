@@ -1,6 +1,12 @@
 {
     "git.ignoreLimitWarning": true,
+<<<<<<< HEAD
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true
+=======
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": false
+>>>>>>> 4b7a6019883e5a5a68b522c60718da4c4d5417b9
 }

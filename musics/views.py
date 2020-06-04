@@ -1,5 +1,7 @@
 from django.shortcuts import render
+
 from .models import Album
+
 # Create your views here.
 
 
@@ -7,6 +9,12 @@ def musics(request):
     albums = Album.objects.all()
     context = {'albums': albums}
     return render(request, 'musics/index.html', context)
+
+
+def dashboards(request):
+    albums = Album.objects.all()
+    context = {'albums': albums}
+    return render(request, 'musics/dashboard.html', context)
 
 # def songs(request):
 #     song = serializers.serialize('json', Song.objects.all())

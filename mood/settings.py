@@ -37,12 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'audiotracks',
     'bootstrap4',
     'jsonify',
 
     # apps
-    'dashboard',
     'musics'
 ]
 

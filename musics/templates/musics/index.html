@@ -107,7 +107,7 @@
     <!-- Page Content -->
     <div id="content">
 
-    {% block  navbar_header %}
+    {% block  header %}
       <!-- We'll fill this with dummy content -->
       <nav class="navbar-content">
         <form action="" class="search-form">
@@ -168,14 +168,7 @@
 
     {% endblock %}
 
-    {% block content %}
-    <div id="cont">
-        <h1> hello world 
-        </h1>
-    </div>
-
-   
-    {% endblock %}
+    {% block main_content %}{% endblock %}
       <!-- <p class="lead">
           <h1>Songs table</h1>
           <div class="table-responsive mt-5">
