@@ -1,0 +1,33 @@
+{% extends "musics/index.html" %}
+
+
+{% block main_content %}
+
+<div class="main-content">
+<br><br>
+{% comment %} upload section {% endcomment %}
+<h3 style="text-align:center">UPLOAD MUSIC</h3>
+<br><br>
+{% comment %} {{-- <div style="text-align:center">
+    <button class="button button4" type="button" onclick="alert('Hello world!')" >Browse to file</button>
+</div> --}} {% endcomment %}
+<form class="md-form">
+    <div class="file-field">
+      <div class="z-depth-1-half mb-4">
+
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="btn btn-mdb-color btn-rounded float-left b">
+          <span></span>
+          <label for="file">
+              UPLOAD AUDIO
+              <input type="file" id="file">
+          </label>
+        </div>
+      </div>
+    </div>
+  </form>
+
+{% comment %} end of upload section {% endcomment %}      
+</div>
+{% endblock %}
