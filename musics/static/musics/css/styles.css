@@ -19,7 +19,7 @@ font-family: 'Poppins', sans-serif;
 font-size: 1.1em;
 font-weight: 300;
 line-height: 1.7em;
-color: #999;
+color: #fff;
 }
 
 a, a:hover, a:focus {
@@ -41,7 +41,7 @@ background: #0f1531;
 color: #fff;
 transition: all 0.3s;
 position: fixed;
-border-right: 1px solid #7886a1;
+border-right: 1px solid #262f43;
 
 
 }
@@ -99,7 +99,7 @@ display: block;
 color:  rgb(114, 124, 245);
 }
 .sidebar-header {
-border-bottom: 1px solid #7886a1;
+border-bottom: 1px solid #262f43;
 
 }
 .sidebar-header span {
@@ -150,8 +150,8 @@ padding-right: 25px;
 height: 59px;
 margin-left: 16px;
 background-color:  #0f1531;
-border-left: 1px solid #7886a1;
-border-bottom: 1px solid #7886a1;
+border-left: 1px solid #262f43;
+border-bottom: 1px solid #262f43;
 position: fixed;
 
 }
@@ -207,6 +207,22 @@ width: 1300px;
 .profile-image {
     border-radius: 200px;
 }
+
+/* artists */
 .card {
     background-color: #0f1531;
+    border: 1px solid #262f43;
+}
+i{
+     color: #7886a1!important;
+}
+.span-artist {
+    color: #fff;
+}
+.dropdown-item:hover {
+    background-color: #262f43;
+    margin: 5px;
+}
+.text-body {
+    color: #fff;
 }
