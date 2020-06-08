@@ -226,3 +226,55 @@ i{
 .text-body {
     color: #fff;
 }
+
+/* upload styles */
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button1 {border-radius: 2px;}
+  .button2 {border-radius: 4px;}
+  .button3 {border-radius: 8px;}
+  .button4 {border-radius: 12px;}
+  .button5 {border-radius: 50%;}
+  
+  label {
+      display: block;
+      width: 60vw;
+      max-width: 300px;
+      margin: 0 auto;
+      background-color: slateblue;
+      border-radius: 2px;
+      font-size: 1em;
+      line-height: 2.5em;
+      text-align: center;
+  }
+  
+  label:hover {
+      background-color: cornflowerblue;
+  }
+  
+  label:active {
+      background-color: mediumaquamarine;
+  }
+  
+  input {
+      border: 0;
+      clip-path: rect(1px, 1px, 1px, 1px);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      width: 1px;
+  }
+
+/* upload styles end */

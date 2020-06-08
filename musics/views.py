@@ -27,10 +27,19 @@ def artists(request):
     return render(request, 'musics/artists.html', {})
 
 
+def browse(request):
+    return render(request, 'musics/browse.html', {})
+
+def radio(request):
+    return render(request, 'musics/radio.html', {})
+
+def upload(request):
+    return render(request, 'musics/upload.html', {})
+
+
 # def songs(request):
 #     song = serializers.serialize('json', Song.objects.all())
 #     return HttpResponse(song, content_type="application/json")
-
 # def albums(request):
 #     album = serializers.serialize('json', Album.objects.all())
 #     return HttpResponse(album, content_type="application/json")

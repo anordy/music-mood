@@ -8,6 +8,9 @@ urlpatterns = [
     path('songs/', views.songs, name= 'songs'),
     path('albums/', views.albums, name= 'albums'),
     path('artists/', views.artists, name= 'artists'),
+    path('browse/', views.browse, name= 'browse'),
+    path('radio/', views.radio, name= 'radio'),
+    path('upload/', views.upload, name= 'upload'),
 
     # path('organizations/', views.organizations, name= 'organizations')
 
