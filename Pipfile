@@ -29,7 +29,7 @@ sqlparse = "==0.3.1"
 toml = "==0.10.1"
 wrapt = "==1.12.1"
 Django = "==3.0.6"
-Pillow = "==7.1.2"
+Pillow = "==9.3.0"
 
 [requires]
 python_version = "3.8"
